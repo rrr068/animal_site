@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Topページ</title>
+  <title>リコ動物病院</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,7 +16,7 @@
   
   <header>
     <h1 class="headline">
-      <a>リコ動物病院</a>
+      <a>リコ動物病院aaaaaaaaaaa</a>
     </h1>
     <ul class="nav-list">
       <li class="nav-list-item">
@@ -38,12 +38,174 @@
   </header>
 
   <main>
+    <section class="carousel">
+      <div class="carosel-content">
+        <p>カルセール</p>
+        <p>メインビジュアル</p>
+      </div>
+    </section>
+    <section class="about">
+      <h2>診療理念</h2>
+      <div class="about-content">
+        <div class="image-placeholder">
 
+        </div>
+        <div class="text-placeholder">
+          <h2>企業理念について</h2>
+          <p>私たちは、リコ動物病院です。</p>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer>
-
+    <a>リコ動物病院</a><br>
+    <a href="tel:0459724131">045-972-4131</a>
+    <table class="footer-menu-list">
+      <tr>
+        <th>診療時間</th>
+        <th>月</th>
+        <th>火</th>
+        <th>水</th>
+        <th>木</th>
+        <th>金</th>
+        <th>土</th>
+        <th>日</th>
+        <th>祝</th>
+      </tr>
+      <tr>
+        <td>09:00〜12:00</td>
+        <td>ー</td>
+        <td>〇</td>
+        <td>〇</td>
+        <td>〇</td>
+        <td>〇</td>
+        <td>〇</td>
+        <td>〇</td>
+        <td>〇</td>
+      </tr>
+      <tr>
+        <td>16:00〜19:00</td>
+        <td>ー</td>
+        <td>〇</td>
+        <td>〇</td>
+        <td>〇</td>
+        <td>〇</td>
+        <td>〇</td>
+        <td>ー</td>
+        <td>ー</td>
+      </tr>
+      </tr>
+      <caption>※休診日：月曜日</caption>
+      </table>
+      <ul class="nav-list">
+        <li class="nav-list-item">
+          <a>当院について</a>
+        </li>
+        <li class="nav-list-item">
+          <a>診療案内</a>
+        </li>
+        <li class="nav-list-item">
+          <a>料金案内</a>
+        </li>
+        <li class="nav-list-item">
+          <a>院内案内</a>
+        </li>
+        <li class="nav-list-item">
+          <a>里親募集</a>
+        </li>
+      </ul>
   </footer>
 
+
+  <style>
+    * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+main {
+    padding: 2rem 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+.carousel {
+    background-color: #ddd;
+    text-align: center;
+    padding: 2rem;
+}
+
+.carousel-content p {
+    margin-bottom: 1rem;
+}
+
+.about-content, .concept-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+}
+
+.about-content .image-placeholder, .concept-content .image-placeholder, .concept-content .text-placeholder {
+    background-color: #ddd;
+    flex: 1;
+    min-height: 200px;
+}
+
+.text-placeholder {
+    flex: 2;
+    background-color: #eee;
+}
+
+button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #888;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+  </style>
 </body>
 </html>
