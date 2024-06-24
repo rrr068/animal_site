@@ -16,7 +16,7 @@
   
   <header>
     <h1 class="headline">
-      <a>リコ動物病院aaaaaaaaaaa</a>
+      <a>リコ動物病院</a>
     </h1>
     <ul class="nav-list">
       <li class="nav-list-item">
@@ -39,9 +39,14 @@
 
   <main>
     <section class="carousel">
-      <div class="carosel-content">
-        <p>カルセール</p>
-        <p>メインビジュアル</p>
+      <div class="carosel-item">
+        <img src="/images/dog_image.png" alt="image 1">
+      </div>
+      <div class="carosel-item">
+        <img src="" alt="image 2">
+      </div>
+      <div class="carosel-item">
+        <img src="" alt="image 3">
       </div>
     </section>
     <section class="about">
@@ -123,7 +128,6 @@
       </ul>
   </footer>
 
-
   <style>
     * {
     box-sizing: border-box;
@@ -167,19 +171,24 @@ main {
     padding: 2rem 1rem;
 }
 
-section {
+section.carousel {
     margin-bottom: 2rem;
-}
-
-.carousel {
     background-color: #ddd;
     text-align: center;
     padding: 2rem;
-}
-
-.carousel-content p {
-    margin-bottom: 1rem;
-}
+  }
+        
+  .carousel-item {
+    display: inline-block;
+    margin: 0 10px;
+  }
+        
+  .carousel-item img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+    /* Adjust the max-width and any other styles as needed */
+  }
 
 .about-content, .concept-content {
     display: flex;
