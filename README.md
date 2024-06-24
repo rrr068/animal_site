@@ -7,4 +7,4 @@
 
 <h2>リモートリポジトリをローカルに反映させる</h2>
 
-<p>git fetch origin main</p>
+<p>git pull origin main</p>
