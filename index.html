@@ -14,7 +14,7 @@
   integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
   crossorigin="anonymous"></script>
   <script>
-    //よくわからんスライド見たいなやつのコード
+    //スライドショーのコード
     $(document).ready(function() {
     const slides = $("#js-slide").find("img");
     const slideLength = slides.length;
@@ -42,16 +42,16 @@
 
 <header>
   <h1 class="headline">
-      <a href="#" class="logo">リコの動物病院</a>
+      <a href="/" class="logo">リコの動物病院</a>
   </h1>
   <nav>
     <ul class="gnavi">
-      <li><a href="#">当院について</a></li>
-      <li><a href="#">診療案内</a></li>
-      <li><a href="#">料金案内</a></li>
-      <li><a href="#">院内案内</a></li>
-      <li><a href="#">里親募集</a></li>
-      </ul>
+      <li><a href="/greeting.html">当院について</a></li>
+      <li><a href="/service.html">診療案内</a></li>
+      <li><a href="/guide.html">料金案内</a></li>
+      <li><a href="/intro.html">院内案内</a></li>
+      <li><a href="/recruit.html">里親募集</a></li>
+    </ul>
   </nav>
 </header>
 
@@ -228,11 +228,12 @@
   </footer>
 
   <style>
-    * {
+
+  * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
+  }
 
 body {
     font-family: Arial, sans-serif;
