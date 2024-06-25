@@ -1,21 +1,110 @@
 <!-- 料金案内 -->
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>料金案内</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>料金案内</title>
+    <link rel="stylesheet" href="tab.css">
 </head>
 <body>
   <header>
     私の名前は森田です
   </header>
   <main>
+    <div class="tabs">
+        <button class="tab-button" onclick="openTab(event, 'dogs')">犬</button>
+        <button class="tab-button" onclick="openTab(event, 'cats')">猫</button>
+    </div>
 
+    <div id="common" class="common-content">
+        <h2>共通の料金メニュー</h2>
+        <p>健康診断: ¥3000</p>
+        <p>基本診察: ¥2000</p>
+        <!-- 追加のメニュー項目 -->
+    </div>
+    <div id="dogs" class="tab-content">
+        <h2>犬の料金メニュー</h2>
+        <table border="1">
+          <tr>
+            <th>初診料1.（カルテ作成時）</th>
+            <td>1,600円</td>
+          </tr>
+          <tr>
+            <th>初診料2.（新規疾病、健康診断）</th>
+            <td>1,100円</td>
+          </tr>
+          <tr>
+            <th>初診料3.（同一疾病の継続診療）</th>
+            <td>550円</td>
+          </tr>
+          
+        </table>
+      <table border="1">
+        <table border="1">
+          <tr>
+            <th>~PM11:00、休日</th>
+            <td>1,100円</td>
+          </tr>
+          <tr>
+            <th>PM11:00~PM12:00</th>
+            <td>2,200円</td>
+          </tr>
+          <tr>
+            <th>PM12:00</th>
+            <td>550円</td>
+          </tr>
+          
+        </table>
+      </table>
+
+    <div id="common" class="common-content">
+        <h2>共通の料金メニュー</h2>
+        <p>健康診断: ¥3000</p>
+        <p>基本診察: ¥2000</p>
+        <!-- 追加のメニュー項目 -->
+    </div>
+
+    <div id="dogs" class="tab-content">
+        <h2>犬の料金メニュー</h2>
+        <p>トリミング: ¥5000</p>
+        <p>予防接種: ¥3000</p>
+        <!-- 追加のメニュー項目 -->
+    </div>
+
+    <div id="cats" class="tab-content" style="display:none;">
+        <h2>猫の料金メニュー</h2>
+        <table border="1">
+          <tr>
+            <th>初診料1.</th>
+            <td>1,600円</td>
+          </tr>
+          <tr>
+            <th>初診料2.</th>
+            <td>1,100円</td>
+          </tr>
+          <tr>
+            <th>初診料3.</th>
+            <td>550円</td>
+          </tr>
+        </table>
+
+    <div id="cats" class="tab-content" style="display:none;">
+        <h2>猫の料金メニュー</h2>
+        <p>トリミング: ¥4000</p>
+        <p>予防接種: ¥2500</p>
+        <!-- 追加のメニュー項目 -->
+    </div>
+
+
+    <script src="scripts.js"></script>
+
+
+    <script src="tab.js"></script>
+   </table>
   </main>
   <footer>
-    
+
   </footer>
 </body>
 </html>
