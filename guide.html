@@ -1,3 +1,5 @@
+<!-- 料金案内 -->
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -24,8 +26,8 @@
 
   <main>
     <div class="tabs">
-        <button class="tab-button" onclick="openTab(event, 'dogs')">犬</button>
-        <button class="tab-button" onclick="openTab(event, 'cats')">猫</button>
+        <button class="tab-button" onclick="openTab(event, 'dogs')"><img src="data:image/png;base64,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"></button>
+        <button class="tab-button" onclick="openTab(event, 'cats')"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAGWElEQVR4nO2caahWRRjHf2pdLTUzt9xyQ7NFqYhose1DqSCWUhGZFPWhPQlMMtu+CKFFUUEmFGaLWFRQYhaWkXrNbLXMyLLrNTEFt0xLrXti4H/g4fSu98y57+L8YT6cOc955jn/95l5Zp6Z80JAQEBAQEBAQEBAQE1gKLAMOACsBy6stEG1hI7AL0Bkym6gd6UNqxXcINK+BXoCH+t6aqUNqwV0Ar4XYTer7j1dT6mwbVWPYcCnIutroAEYABwCDnvowuuAz+TVaeFs+RxYTgVwHNAPOBO4DJgGLBFJkcY/F0QcXlbdqynbbDDjaTw0pCHvO6MvU3QArgYWAhuB/YngYIvztPlADz17m+oPGEJ9EBiT2MsDeZkSeCWwIQ9Ze4DfgEbgJeBWQ5wjfRbQItkbPdgSE3jE2LS+TBIteZl74EzgXzXwMzBDXbZLkZecpBdzz/0D3O3Jngbj5X0MiY6IS/WDrQCa5PGubAY+Ah4ELkmQ1ztLAmdKsSPwIRmfnOf1UtCIx0A31u0yRjnSx3m0yRKICIijfTklJo+sCLxCxLlynTH+LmAN8GcRA78C7hHJZEggIsJF5R/kZRcDg4DjVU6R5z0M/ChZOxPwTmAH4+aPqK4v8EWCpL+BnfKyVcA8BYzTyA65CEwL7wROlMLN8qAGQ942eWRXKoOaIHCBFD6g6zt1vcnT5DULAscqcGzJM+aO170mzSoyJXCjFI7W9RpdX0PlkY/AJkOEIyqJrea+61mZErhPCk/Q9R+J63Jwon7x+7UKaVTUbAb2qq3dunZj6WrgTeBpRfXLgZPKJNDpKkTgr1kT+JcUxhE0XnV0LfH5bur2H5plXdqySaSOL9CFm1XydeGtuu9kMyVwmxS6yOuwVteTizw3EHgmscxzBH6il78FuAA4XbLd5NU9tMQbqSnIVE2I5yt45foR3OS8vYd3PcbY6Q3LpTQebO81Y0v3HPKOgLnGc1vkfVPUhX2kxlwme45siEk8uchzbjhYWURmkJnwe8NjUuq8BnXlb1TXpGVaZ6C/ZPeal3Lj1yiyQzst1Vxb1xaRXam0WiFMla73PdrICHnRbjOADzAk5iqum4+hbRD3CLe+TftjrJKum/CMxVL8mqnrKONdQvOgCP5AaS5nTCkYqcz08BS2uWC2w8OLx2m2HcptesUALdNcA88Cx3rSO1ne7YYBH/sth7Ryao0dh2XLBDLCGBNR13vsou7H8YHZJlv0lKJ6MXTXTCHOUT5Kxjg7kXT8EpgOnOchwrp02ZMpdUwz0xw34X9e3j3YZGMGy+PmJaZYt9NG6KhfaleO4FFsmlAIjVo2poWbVy41XlVqaXN0Bq4HXlQgSWtIN+n0heHK+S3TiuOg8pYbVXcfMKSSBCZRNYbUqt2RB0Nmaw6Z3C7IEnVF4HOK8D7WtUclgUe13VG1GFKrdkceDLkI2N6G6+i6I3CWdMxU+myBjmvE2ep1uucjLVa3QSQqctYm0iR+UhXZXTWGrDJ6tsvbRmmC7Sbad5j7LbquBru9IEppSF8dEnI63jWHkixm6H6zSeW7tH8uXKUtgP06fTA2I7u9IUppyBxzDCTXRLq9OTw00civLHAYIEp47Lh6JfB85fKcB55bJOfXrHxkF5MDTCI+OTFdcvG2xFrPdntF1EpD+pgu+UQeGXf45/ccWed8bR5SfYPJIMXnd3zZ7R1RKwxx25c/6bnGPF23wewMrkgs8/K1mau+HNmKICrTkAnGq1bn2SLtpJ29SLL9SmyzrgkcBrxu5JfmyQMOVfSMjw6fVUabdUdgT6XRF5upSjzIJzMvLsn5uBKgkTbPR5fZZl0RuDoxnThSomyLDiD1aEWbdUVgpPKGNn0GliA7t8QTDUcVgVm8TCAwgUAg/0fwwBIRhS6cDlEgMBBYUUTBAwOBFUUUPDAQWFFEwQPToUUE2vPR7UxioLWy5bZZs2vhnTLkDFM3JM/3auXIFkK8FeCejdFfdW4z3iL+RM3+HUDvPLIVwQvm2K87onGq/rXD1S1KIVsIC/XMEuk4Rx/15NLzjuoXijhXXlHdW1QBepn9DVv26FuT1soW+7JoTw49zUqbJT+p2OuhzUzRXfu1G/QSiwoYV45sIYzQs1v0mf/cAif0nZe+rXM2++R5VUNeQEBAQEBAQEBAAEcD/gNGZYswIW2SjQAAAABJRU5ErkJggg=="></button>
     </div>
 
 
@@ -61,13 +63,13 @@
           </tr>
       </table>
       <table>
-      
        <tr>
-          <th>PM12:00</th>
-          <td>550円</td>
+          <th>往診療（診察料に付加）</th>
+          <td>1,100円~2,200円</td>
         </tr>
       </table>
       
+
 
         <h3>ワクチン</h3>
         <table>
@@ -157,6 +159,13 @@
                 <td>550円</td>
             </tr>
         </table>
+
+    <div id="common" class="common-content">
+        <h2>共通の料金メニュー</h2>
+        <p>健康診断: ¥3000</p>
+        <p>基本診察: ¥2000</p>
+        <!-- 追加のメニュー項目 -->
+
     </div>
 
     <div id="cats" class="tab-content" style="display:none;">
@@ -190,6 +199,13 @@
               <td>550円</td>
           </tr>
       </table>
+      <table>
+        <tr>
+           <th>往診療（診察料に付加）</th>
+           <td>1,100円~2,200円</td>
+         </tr>
+       </table>
+
       <h3>ワクチン</h3>
       <table>
           <tr>
@@ -389,7 +405,7 @@
       padding-left: 270px;
     }
     h3{
-      color:glay;
+      color:gray;
       padding-left: 270px;
       padding-top: 2%;
       padding-bottom: -15%;
@@ -405,6 +421,8 @@
       border: solid 1px;
       width:260px;
       padding: 5px;
+      background-color:lightgray
+
     }
     td{
       border: solid 1px;
