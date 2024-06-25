@@ -31,7 +31,7 @@
 
     <div id="dogs" class="tab-content">
         <h2>犬の料金メニュー</h2>
-        <table border="1">
+        <table>
             <tr>
                 <th>初診料1.（カルテ作成時）</th>
                 <td>1,600円</td>
@@ -46,7 +46,7 @@
             </tr>
         </table>
       <h3>診察料</h3>
-      <table border="1">
+      <table>
           <tr>
             <th>~PM11:00、休日</th>
             <td>1,100円</td>
@@ -62,7 +62,7 @@
       </table>
 
         <h3>ワクチン</h3>
-        <table border="1">
+        <table>
             <tr>
                 <th>注射料（高額な薬品は別料金）</th>
                 <td>1,100円~2,200円</td>
@@ -85,7 +85,7 @@
             </tr>
         </table>
         <h3>検査料</h3>
-        <table border="1">
+        <table>
             <tr>
                 <th>エコー</th>
                 <td>2,200円</td>
@@ -116,7 +116,7 @@
             </tr>
         </table>
         <h3>手術料</h3>
-        <table border="1">
+        <table>
             <tr>
                 <th>避妊手術</th>
                 <td>33,000円~44,000円</td>
@@ -127,7 +127,7 @@
             </tr>
         </table>
         <h3>処置料</h3>
-        <table border="1">
+        <table>
             <tr>
                 <th>スケーリング（麻酔科）</th>
                 <td>11,000円~13,200円</td>
@@ -153,7 +153,7 @@
 
     <div id="cats" class="tab-content" style="display:none;">
         <h2>猫の料金メニュー</h2>
-        <table border="1">
+        <table>
           <tr>
               <th>初診料1.（カルテ作成時）</th>
               <td>1,600円</td>
@@ -168,7 +168,7 @@
           </tr>
       </table>
       <h3>診察料</h3>
-      <table border="1">
+      <table>
           <tr>
               <th>~PM11:00、休日</th>
               <td>1,100円</td>
@@ -183,7 +183,7 @@
           </tr>
       </table>
       <h3>ワクチン</h3>
-      <table border="1">
+      <table>
           <tr>
               <th>注射料（高額な薬品は別料金）</th>
               <td>1,100円~2,200円</td>
@@ -194,7 +194,7 @@
 
       </table>
       <h3>検査料</h3>
-      <table border="1">
+      <table>
           <tr>
               <th>エコー</th>
               <td>2,200円</td>
@@ -238,7 +238,7 @@
           </tr>
       </table>
       <h3>手術料</h3>
-      <table border="1">
+      <table>
           <tr>
               <th>避妊手術</th>
               <td>22,000円</td>
@@ -249,7 +249,7 @@
           </tr>
       </table>
       <h3>処置料</h3>
-      <table border="1">
+      <table>
           <tr>
               <th>スケーリング（麻酔科）</th>
               <td>8,800円</td>
@@ -374,9 +374,30 @@
     .gnavi li a:hover::after {
         transform: scale(1, 1);
     }
-    .tab-content{
-      text-align: center
+
+
+
+    h2{
+      padding-left: 270px;
     }
+    h3{
+      padding-left: 270px;
+      padding-top: 2%;
+      padding-bottom: -15%;
+    }
+    table{
+      margin-top: 1%;
+      border-collapse: collapse;
+      display: flex;
+      justify-content: center; 
+      align-items: center;
+    }
+    th, td {
+      border: solid 1px;
+      width:250px;
+      padding: 5px;
+    }
+  
 
 </style>    
    </table>
