@@ -40,7 +40,6 @@
     });
 </script>
 
-<<<<<<< HEAD
   <header>
     <h1 class="headline">
       <a>リコの動物病院</a>
@@ -63,10 +62,9 @@
       </li>
     </ul>
   </header>
-=======
 <header>
   <h1 class="headline">
-      <a href="#" class="logo">リコ動物病院</a>
+      <a href="#" class="logo">リコの動物病院</a>
   </h1>
   <nav>
     <ul class="gnavi">
@@ -78,7 +76,6 @@
       </ul>
   </nav>
 </header>
->>>>>>> b1cb4763dff42c4ea4f88afcfaa7c86f47209207
 
   <main>
     <div class="slide-items" id="js-slide">
@@ -105,7 +102,7 @@
         </div>
         <div class="concept-text">
           <h2>コンセプト</h2>
-          <p>私たちは、リコ動物病院です。私たちのコンセプトについて説明します。</p>
+          <p>私たちは、リコの動物病院です。私たちのコンセプトについて説明します。</p>
         </div>
         <div class="button-body">
           <a href="#" class="btntextchange"><span>もっと見る</span><span>コンセプトについて</span></a>
@@ -162,12 +159,13 @@
         <caption>※月曜日は休診日です
         </caption>
        </table>
+       <a class = "payment">お支払は現金のみとなります</a>
     </div>
   </div>
 
   <footer>
     <div class = "footer">
-      <div>
+      <div class = "footer-left">
         <a class = "footer-name">リコの動物病院</a><br>
         <a href="tel:0459724131" class="tel">045-972-4131</a>
         <table class="footer-menu-list">
@@ -365,22 +363,6 @@ main {
   margin-bottom: 1rem;
 }
 
-<<<<<<< HEAD
-.top-bottom {
-  display: flex;
-}
-
-.hospital-overview{
-  width: 40%;
-  margin-left: 10%;
-}
-
-.schedule {
-  width: 40%;
-  margin-left: 10%;
-}
-
-=======
 .concept-content {
   display: frex;
   flex-direction: column;
@@ -457,8 +439,22 @@ main {
   opacity:1;/*不透明に*/
 }
 
+.top-bottom { /*フッターの上*/
+  display: flex;
+  margin-bottom: 200px;
+}
 
->>>>>>> b1cb4763dff42c4ea4f88afcfaa7c86f47209207
+.hospital-overview{ /*病院概要*/
+  width: 40%;
+  margin-left: 10%;
+}
+
+.schedule { /*診療スケジュール*/
+  width: 40%;
+  margin-left: 10%;
+}
+
+
 footer {
   background-color: bisque;
 }
@@ -466,6 +462,10 @@ footer {
 .footer {
   display:flex;
   margin-left: 10%;
+}
+
+.footer-left {
+  width: 40%;
 }
 
 .footer-name {
