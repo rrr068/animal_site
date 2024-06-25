@@ -14,6 +14,7 @@
   integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
   crossorigin="anonymous"></script>
   <script>
+    //よくわからんスライド見たいなやつのコード
     $(document).ready(function() {
     const slides = $("#js-slide").find("img");
     const slideLength = slides.length;
@@ -39,6 +40,7 @@
     });
 </script>
 
+<<<<<<< HEAD
   <header>
     <h1 class="headline">
       <a>リコの動物病院</a>
@@ -61,6 +63,22 @@
       </li>
     </ul>
   </header>
+=======
+<header>
+  <h1 class="headline">
+      <a href="#" class="logo">リコ動物病院</a>
+  </h1>
+  <nav>
+    <ul class="gnavi">
+      <li><a href="#">当院について</a></li>
+      <li><a href="#">診療案内</a></li>
+      <li><a href="#">料金案内</a></li>
+      <li><a href="#">院内案内</a></li>
+      <li><a href="#">里親募集</a></li>
+      </ul>
+  </nav>
+</header>
+>>>>>>> b1cb4763dff42c4ea4f88afcfaa7c86f47209207
 
   <main>
     <div class="slide-items" id="js-slide">
@@ -72,11 +90,25 @@
       <h2>診療理念</h2>
       <div class="about-content">
         <div class="image-placeholder">
-
         </div>
         <div class="text-placeholder">
           <h2>企業理念について</h2>
           <p>私たちは、リコの動物病院です。</p>
+        </div>
+      </div>
+    </section>
+    <section class="concept">
+      <h2>コンセプト</h2>
+      <div class="concept-content">
+        <div class="image-placeholder">
+          <img src="/images/dog_image.png" alt="concept">
+        </div>
+        <div class="concept-text">
+          <h2>コンセプト</h2>
+          <p>私たちは、リコ動物病院です。私たちのコンセプトについて説明します。</p>
+        </div>
+        <div class="button-body">
+          <a href="#" class="btntextchange"><span>もっと見る</span><span>コンセプトについて</span></a>
         </div>
       </div>
     </section>
@@ -213,31 +245,69 @@ body {
 }
 
 header {
-    background-color: #ccc;
+    background-color: #ffffff; 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 1rem 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
-header .logo {
-    font-size: 1.5rem;
+/* ロゴのスタイル */
+.logo {
+    font-size: 1.8rem; 
     font-weight: bold;
+    font-family: 'Arial', sans-serif; 
+    text-decoration: none; 
 }
 
-nav ul {
-    list-style: none;
+.gnavi{
     display: flex;
+    flex-wrap: wrap;/*スマホ表示折り返し用なのでPCのみなら不要*/
+    margin:0 0 0 0;
+    list-style: none;
 }
 
-nav ul li {
-    margin-left: 1rem;
-}
-
-nav ul li a {
+.gnavi li a{
+    display: block;
+    padding:10px 20px 0;
     text-decoration: none;
-    color: #000;
+    color: #333;
 }
+
+.gnavi li{
+    margin-bottom:20px;
+}
+
+/*左から右に線が伸びる（下部）*/
+.gnavi li a{
+  position: relative;
+}
+
+.gnavi li a:hover{
+  color:#0481A2;
+}
+
+.gnavi li a::after {
+    content: '';
+    /*絶対配置で線の位置を決める*/
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 80%;
+    height: 2px;
+    background:#0481A2;
+    /*アニメーションの指定*/
+    transition: all .3s;
+    transform: scale(0, 1);
+    transform-origin: left top;
+}
+
+/*現在地とhoverの設定*/
+.gnavi li a:hover::after {
+    transform: scale(1, 1);
+}
+
 
 main {
     padding: 2rem 1rem;
@@ -285,19 +355,17 @@ main {
     background-color: #eee;
 }
 
-button {
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    border: none;
-    background-color: #888;
-    color: #fff;
-    cursor: pointer;
+.concept {
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
-button:hover {
-    background-color: #555;
+.concept h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
+<<<<<<< HEAD
 .top-bottom {
   display: flex;
 }
@@ -312,6 +380,85 @@ button:hover {
   margin-left: 10%;
 }
 
+=======
+.concept-content {
+  display: frex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-placeholder {
+  margin-bottom: 1rem;
+}
+
+.image-placeholder img {
+  max-width: 100%;
+  height: 200px;
+  border-radius: 8px;
+}
+
+.concept-text {
+  max-width: 600px;
+  text-align: center;
+}
+
+.button-body {
+  vertical-align:middle;
+    text-align: center;
+}
+
+.btntextchange{
+    /*テキストの基点とするためrelativeを指定*/
+  position: relative;
+    /*ボタンの形状*/
+  border: 1px solid #555;
+  border-radius:25px;
+    min-width:210px;
+  padding: 20px;
+    text-align: center;
+  display: inline-block;
+    text-decoration: none;
+    color: #333;
+    outline: none;
+    /*アニメーションの指定*/
+    transition: all .2s;
+}
+
+/*hoverした際の変化*/
+.btntextchange:hover{
+  background:#333;
+  color:#fff;
+}
+
+.btntextchange span{
+    /*絶対配置でテキストの位置を決める*/
+  position: absolute;
+  left: 50%;
+  top:50%;
+    transform:translate(-50%,-50%);
+    /*アニメーションの指定*/
+    transition: all .5s;
+  /*ブロック要素にしてテキスト折り返しなし*/  
+  display: block;
+  white-space: nowrap;
+}
+
+/*差し替わるテキストの設定*/
+.btntextchange span:nth-child(2){
+  opacity:0;/*透過0に*/
+}
+
+/*hoverするとテキストが入れ替わる設定*/
+.btntextchange:hover span:nth-child(1){
+  opacity:0;/*透過0に*/
+}
+
+.btntextchange:hover span:nth-child(2){
+  opacity:1;/*不透明に*/
+}
+
+
+>>>>>>> b1cb4763dff42c4ea4f88afcfaa7c86f47209207
 footer {
   background-color: bisque;
 }
