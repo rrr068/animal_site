@@ -92,10 +92,25 @@
   <div class = "top-bottom">
     <div class = "hospital-overview">
       <h2>病院概要</h2>
-      <hr class="overview-hr" />
-      <p>住所　神奈川県横浜市青葉区藤が丘2-3-2 シュベルティーF 1F</p>
-      <p>電話番号　045-972-4131</p>
-      <p>診療動物　犬・猫・フェレット</p>
+      <hr class = "overview-hr">
+      <table class = "overview">
+        <tr>
+          <td>住所</td>
+          <td>〒227-0043</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>神奈川県横浜市青葉区藤が丘2-3-2 シュベルティーF 1F</td>
+        </tr>
+        <tr>
+          <td>電話番号</td>
+          <td>045-972-4131</td>
+        </tr>
+        <tr>
+          <td>診療動物</td>
+          <td>犬・猫・フェレット</td>
+        </tr>
+      </table>
     </div>
     <div class = "schedule">
       <h2>診療スケジュール</h2>
@@ -427,10 +442,50 @@ main {
   margin-bottom: 80px;
 }
 
+.hospital-overview { /*病院概要*/
+  width: 40%;
+  margin-left: 10%;
+}
+
+.overview {
+  border: 0px none;
+}
+
+.schedule { /*診療スケジュール*/
+  width: 40%;
+  margin-left: 8%;
+  margin-right: 10%;
+}
+
+.overview-hr {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th {
+  height: 50px;
+  padding: 5px 15px;
+  background: #305aa7;
+  color: #FFF; 
+}
+
+td {
+  height: 50px;
+  padding: 5px 15px;
+  background-color: #ffffff;
+}
+
+.bottom-menu-list {
+  border: solid 1px #305aa7;
+}
 
 .pay{ /*支払い方法*/
   display: flex;
-  justify-content: center;
+  justify-content: center; /*中央に配置*/
   align-items: center;
 }
 .payment {/*支払い方法*/
@@ -443,24 +498,6 @@ main {
   background-color: beige;
   margin-bottom: 180px;
   text-align: center;
-}
-
-
-
-.hospital-overview{ /*病院概要*/
-  width: 40%;
-  margin-left: 10%;
-}
-
-.schedule { /*診療スケジュール*/
-  width: 40%;
-  margin-left: 8%;
-  margin-right: 10%;
-}
-
-.overview-hr {
-  margin-top: 10px;
-  margin-bottom: 20px;
 }
 
 footer {
@@ -480,6 +517,7 @@ footer {
   font-size: 30px;
 }
 
+
 .tel {
   font-size: 25px;
   width: 50%;
@@ -487,29 +525,19 @@ footer {
   border-radius: 10px;
   background-color: #FAB27B;
   display: flex;
-  justify-content: center;
+  justify-content: center; /*中央に配置*/
   align-items: center;
   margin: 10px;
   margin-bottom: 30px;
 } 
 
-th {
-  padding: 5px 15px;
-  background: #305aa7;
-  color: #FFF; 
-}
-
-td {
-  padding: 5px 15px;
+.footer-menu-list {
   border: solid 1px #305aa7;
-  background-color: #ffffff;
 }
-
 
 caption {
   caption-side: bottom;
   text-align: left;
-
 }
 
 .map {
@@ -522,16 +550,15 @@ caption {
 
 .footer-hr {
   width: 60%;
-	border-style: solid;
-	border-color:#555;
+	border-style: 1px solid;
+	border-color:darkgrey;
   margin-left: 20%;
 }
-
 
 .f-nav-list {
   padding-bottom: 100px;
   margin-top: 30px;
-  text-align: center;
+  text-align: center; /*中央に配置*/
 }
 
 .nav-list-item {
@@ -539,7 +566,6 @@ caption {
   width: 130px;
   height: 30px;
 }
-
 
   </style>
 </body>
