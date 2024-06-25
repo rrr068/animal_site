@@ -121,7 +121,8 @@
     </div>
     <div class = "schedule">
       <h2>診療スケジュール</h2>
-      <table class="footer-menu-list">
+      <hr class="overview-hr" />
+      <table class="bottom-menu-list">
         <tr>
          <th>診療時間</th>
          <th>月</th>
@@ -159,8 +160,10 @@
         <caption>※月曜日は休診日です
         </caption>
        </table>
-       <a class = "payment">お支払は現金のみとなります</a>
     </div>
+  </div>
+  <div class = "pay">
+     <a class = "payment">お支払は現金のみとなります</a>
   </div>
 
   <footer>
@@ -210,7 +213,7 @@
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3246.4062827148214!2d139.52375307578166!3d35.54366697263188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f8287626de1f%3A0xece4e6dca4477aa5!2z44Oq44Kz44Gu5YuV54mp55eF6Zmi!5e0!3m2!1sja!2sjp!4v1719238389780!5m2!1sja!2sjp" style="border":0;  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class = "map">
       </iframe>
     </div>
-    <hr class="fotter-hr" />
+    <hr class="footer-hr">
       <ul class="f-nav-list">
         <li class="nav-list-item">
           <a>当院について</a>
@@ -228,6 +231,7 @@
           <a>里親募集</a>
         </li>
       </ul>
+      <center><p>Copyright © リコの動物病院</p></center>
   </footer>
 
   <style>
@@ -441,8 +445,29 @@ main {
 
 .top-bottom { /*フッターの上*/
   display: flex;
-  margin-bottom: 200px;
+  margin-top: 200px;
+  margin-bottom: 80px;
 }
+
+
+.pay{ /*支払い方法*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.payment {/*支払い方法*/
+  font-size: 25px;
+  width: 720px;
+  height: 140px;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color:black;
+  background-color: beige;
+  margin-bottom: 180px;
+  text-align: center;
+}
+
+
 
 .hospital-overview{ /*病院概要*/
   width: 40%;
@@ -451,9 +476,14 @@ main {
 
 .schedule { /*診療スケジュール*/
   width: 40%;
-  margin-left: 10%;
+  margin-left: 8%;
+  margin-right: 10%;
 }
 
+.overview-hr {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
 
 footer {
   background-color: bisque;
@@ -494,6 +524,7 @@ th {
 td {
   padding: 5px 15px;
   border: solid 1px #305aa7;
+  background-color: #ffffff;
 }
 
 
@@ -512,18 +543,25 @@ caption {
 }
 
 .footer-hr {
-  border-width: 1px 0 0 0;
+  width: 60%;
 	border-style: solid;
-	border-color: #43a047;
+	border-color:#555;
+  margin-left: 20%;
 }
 
 
 .f-nav-list {
-  
   padding-bottom: 100px;
   margin-top: 30px;
   text-align: center;
 }
+
+.nav-list-item {
+  background-color: #FAB27B;
+  width: 130px;
+  height: 30px;
+}
+
 
   </style>
 </body>
