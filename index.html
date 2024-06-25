@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>リコ動物病院</title>
+  <title>リコの動物病院</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -41,7 +41,7 @@
 
   <header>
     <h1 class="headline">
-      <a>リコ動物病院</a>
+      <a>リコの動物病院</a>
     </h1>
     <ul class="nav-list">
       <li class="nav-list-item">
@@ -76,16 +76,67 @@
         </div>
         <div class="text-placeholder">
           <h2>企業理念について</h2>
-          <p>私たちは、リコ動物病院です。</p>
+          <p>私たちは、リコの動物病院です。</p>
         </div>
       </div>
     </section>
   </main>
 
+  <div class = "top-bottom">
+    <div class = "hospital-overview">
+      <h2>病院概要</h2>
+      <hr class="overview-hr" />
+      <p>住所　神奈川県横浜市青葉区藤が丘2-3-2 シュベルティーF 1F</p>
+      <p>電話番号　045-972-4131</p>
+      <p>診療動物　犬・猫・フェレット</p>
+    </div>
+    <div class = "schedule">
+      <h2>診療スケジュール</h2>
+      <table class="footer-menu-list">
+        <tr>
+         <th>診療時間</th>
+         <th>月</th>
+          <th>火</th>
+          <th>水</th>
+          <th>木</th>
+          <th>金</th>
+          <th>土</th>
+         <th>日</th>
+         <th>祝</th>
+        </tr>
+        <tr>
+          <td>09:00〜12:00</td>
+          <td>ー</td>
+          <td>〇</td>
+          <td>〇</td>
+          <td>〇</td>
+          <td>〇</td>
+          <td>〇</td>
+          <td>〇</td>
+          <td>〇</td>
+        </tr>
+        <tr>
+          <td>16:00〜19:00</td>
+          <td>ー</td>
+          <td>〇</td>
+          <td>〇</td>
+          <td>〇</td>
+          <td>〇</td>
+          <td>〇</td>
+          <td>ー</td>
+          <td>ー</td>
+        </tr>
+        </tr>
+        <caption>※月曜日は休診日です
+        </caption>
+       </table>
+    </div>
+  </div>
+
   <footer>
     <div class = "footer">
       <div>
-        <a class = "footer-name">リコ動物病院</a><br>
+        <a class = "footer-name">リコの動物病院</a><br>
         <a href="tel:0459724131" class="tel">045-972-4131</a>
         <table class="footer-menu-list">
          <tr>
@@ -122,10 +173,11 @@
            <td>ー</td>
          </tr>
          </tr>
-         <caption>※休診日：月曜日</caption>
+         <caption>※月曜日は休診日です
+         </caption>
         </table>
       </div>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3246.4062827148214!2d139.52375307578166!3d35.54366697263188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f8287626de1f%3A0xece4e6dca4477aa5!2z44Oq44Kz44Gu5YuV54mp55eF6Zmi!5e0!3m2!1sja!2sjp!4v1719238389780!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class = "map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3246.4062827148214!2d139.52375307578166!3d35.54366697263188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f8287626de1f%3A0xece4e6dca4477aa5!2z44Oq44Kz44Gu5YuV54mp55eF6Zmi!5e0!3m2!1sja!2sjp!4v1719238389780!5m2!1sja!2sjp" style="border":0;  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class = "map">
       </iframe>
     </div>
     <hr class="fotter-hr" />
@@ -246,6 +298,20 @@ button:hover {
     background-color: #555;
 }
 
+.top-bottom {
+  display: flex;
+}
+
+.hospital-overview{
+  width: 40%;
+  margin-left: 10%;
+}
+
+.schedule {
+  width: 40%;
+  margin-left: 10%;
+}
+
 footer {
   background-color: bisque;
 }
@@ -291,7 +357,9 @@ caption {
 }
 
 .map {
-  margin: 0 0 0 auto;
+  width: 40% ;
+  height: 450px;
+  margin-left: 20%;
   margin-right: 10%;
   margin-bottom: 100px;
 }
@@ -304,9 +372,10 @@ caption {
 
 
 .f-nav-list {
+  
+  padding-bottom: 100px;
   margin-top: 30px;
   text-align: center;
-  padding-bottom: 100px;
 }
 
   </style>
