@@ -9,17 +9,25 @@
 </head>
 <body>
   <header>
-    私の名前は森田です
+    <h1 class="headline">
+        <a href="/" class="logo">リコの動物病院</a>
+    </h1>
+    <nav>
+      <ul class="gnavi">
+        <li><a href="/greeting.html">当院について</a></li>
+        <li><a href="/service.html">診療案内</a></li>
+        <li><a href="/guide.html">料金案内</a></li>
+        <li><a href="/intro.html">院内案内</a></li>
+        <li><a href="/recruit.html">里親募集</a></li>
+      </ul>
+    </nav>
   </header>
+
   <main>
     <div class="tabs">
         <button class="tab-button" onclick="openTab(event, 'dogs')">犬</button>
         <button class="tab-button" onclick="openTab(event, 'cats')">猫</button>
     </div>
-<<<<<<< HEAD
-=======
-
->>>>>>> dce3ff8526c15455da5debf4a202c30e22d4c133
     <div id="common" class="common-content">
         <h2>共通の料金メニュー</h2>
         <p>健康診断: ¥3000</p>
@@ -61,12 +69,6 @@
         </table>
       </table>
 
-<<<<<<< HEAD
-
-
-
-=======
->>>>>>> dce3ff8526c15455da5debf4a202c30e22d4c133
     <div id="common" class="common-content">
         <h2>共通の料金メニュー</h2>
         <p>健康診断: ¥3000</p>
@@ -110,6 +112,85 @@
 
 
     <script src="tab.js"></script>
+
+    <style>
+    
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+    
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+    }
+    
+    header {
+        background-color: #ffffff; 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 1rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    }
+    
+    /* ロゴのスタイル */
+    .logo {
+        font-size: 1.8rem; 
+        font-weight: bold;
+        font-family: 'Arial', sans-serif; 
+        text-decoration: none; 
+    }
+    
+    .gnavi{
+        display: flex;
+        flex-wrap: wrap;/*スマホ表示折り返し用なのでPCのみなら不要*/
+        margin:0 0 0 0;
+        list-style: none;
+    }
+    
+    .gnavi li a{
+        display: block;
+        padding:10px 20px 0;
+        text-decoration: none;
+        color: #333;
+    }
+    
+    .gnavi li{
+        margin-bottom:20px;
+    }
+    
+    /*左から右に線が伸びる（下部）*/
+    .gnavi li a{
+      position: relative;
+    }
+    
+    .gnavi li a:hover{
+      color:#0481A2;
+    }
+    
+    .gnavi li a::after {
+        content: '';
+        /*絶対配置で線の位置を決める*/
+        position: absolute;
+        bottom: 0;
+        left: 10%;
+        width: 80%;
+        height: 2px;
+        background:#0481A2;
+        /*アニメーションの指定*/
+        transition: all .3s;
+        transform: scale(0, 1);
+        transform-origin: left top;
+    }
+    
+    /*現在地とhoverの設定*/
+    .gnavi li a:hover::after {
+        transform: scale(1, 1);
+    }
+</style>    
    </table>
   </main>
   <footer>
