@@ -14,7 +14,7 @@
   integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
   crossorigin="anonymous"></script>
   <script>
-    //スライドショーのコード
+    //よくわからんスライド見たいなやつのコード
     $(document).ready(function() {
     const slides = $("#js-slide").find("img");
     const slideLength = slides.length;
@@ -42,16 +42,16 @@
 
 <header>
   <h1 class="headline">
-      <a href="/" class="logo">リコの動物病院</a>
+      <a href="#" class="logo">リコの動物病院</a>
   </h1>
   <nav>
     <ul class="gnavi">
-      <li><a href="/greeting.html">当院について</a></li>
-      <li><a href="/service.html">診療案内</a></li>
-      <li><a href="/guide.html">料金案内</a></li>
-      <li><a href="/intro.html">院内案内</a></li>
-      <li><a href="/recruit.html">里親募集</a></li>
-    </ul>
+      <li><a href="#">当院について</a></li>
+      <li><a href="#">診療案内</a></li>
+      <li><a href="#">料金案内</a></li>
+      <li><a href="#">院内案内</a></li>
+      <li><a href="#">里親募集</a></li>
+      </ul>
   </nav>
 </header>
 
@@ -162,7 +162,7 @@
   <footer>
     <div class = "footer">
       <div class = "footer-left">
-        <a class = "footer-name">リコの動物病院</a><br>
+        <p class = "footer-name">リコの動物病院</p>
         <a href="tel:0459724131" class="tel">045-972-4131</a>
         <table class="footer-menu-list">
          <tr>
@@ -228,12 +228,11 @@
   </footer>
 
   <style>
-
-  * {
+    * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -490,7 +489,7 @@ td {
   align-items: center;
 }
 .payment {/*支払い方法*/
-  padding-top: 40px;
+  padding-top: 4px;
   font-size: 25px;
   width: 720px;
   height: 140px;
@@ -515,12 +514,12 @@ footer {
   width: 40%;
 }
 
-.footer-name {
+.footer-name {/*フッターの「リコの動物病院」*/
+  margin-top: 130px;
   font-size: 30px;
 }
 
-
-.tel {
+.tel {/*電話番号*/
   font-size: 25px;
   width: 50%;
   height: 50px;
@@ -529,25 +528,28 @@ footer {
   display: flex;
   justify-content: center; /*中央に配置*/
   align-items: center;
-  margin: 10px;
-  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 40px;
 } 
 
-.footer-menu-list {
+.footer-menu-list {/*フッターの診療時間表*/
   border: solid 1px #305aa7;
+  height: 260px;
+  width: 100%;
 }
 
-caption {
+caption {/*表の下の「※月曜日は休診日です」*/
   caption-side: bottom;
   text-align: left;
 }
 
-.map {
+.map {/*地図*/
   width: 40% ;
   height: 450px;
+  margin-top: 130px;
   margin-left: 20%;
   margin-right: 10%;
-  margin-bottom: 100px;
+  margin-bottom: 130px;
 }
 
 .footer-hr {
