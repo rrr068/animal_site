@@ -47,6 +47,23 @@
   .navigation button:hover {
       background-color: rgba(0, 0, 0, 0.8);
   }
+  .indicator {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+.indicator span {
+    display: inline-block;
+    margin: 0 5px;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+.indicator .active {
+    background-color: rgba(0, 0, 0, 0.8);
+}
   </style>
 </head>
 <body>
@@ -58,6 +75,7 @@
     //スライドショーのコード
     $(document).ready(function() {
       const slides = $("#js-slide").find("img");
+      const indicators = $(".indicator span");
       const slideLength = slides.length;
 
       let now = 0;
@@ -69,12 +87,17 @@
       slides.hide();
       slides.eq(0).show().addClass("zoom");
 
+      const updateIndicators = () => {
+        indicators.removeClass("active");
+        indicators.eq(now % slideLength).addClass("active");
+    };
       const slideShow = () => {
           slides.eq(now % slideLength).fadeOut(fadeDuration).removeClass("zoom");
           slides.eq(next % slideLength).fadeIn(fadeDuration).addClass("zoom");
 
           now++;
           next++;
+          updateIndicators();
       };
 
       let slideInterval = setInterval(slideShow, showDuration);
@@ -85,6 +108,7 @@
           now = (now - 1 + slideLength) % slideLength;
           next = (now + 1) % slideLength;
           slides.eq(now % slideLength).fadeIn(fadeDuration).addClass("zoom");
+          updateIndicators();
           slideInterval = setInterval(slideShow, showDuration);
       });
 
@@ -120,6 +144,11 @@
         <button id="prev">←</button>
         <button id="next">→</button>
       </div>
+      <div class="indicator">
+        <span class="active"></span>
+        <span></span>
+        <span></span>
+    </div>
     </div>
     <section class="about">
       <h2>診療理念</h2>
