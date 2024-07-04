@@ -1,4 +1,3 @@
-// tab.js
 function openTab(evt, tabName) {
     var i, tabcontent, tablinks, commonContent;
 
@@ -18,6 +17,9 @@ function openTab(evt, tabName) {
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
 
+    // 共通コンテンツを表示する
+    commonContent = document.getElementById("common");
+    commonContent.style.display = "block";
 }
 
 // 最初のタブをデフォルトで開く
