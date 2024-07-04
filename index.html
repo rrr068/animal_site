@@ -96,20 +96,20 @@
       <hr class = "overview-hr">
       <table class = "overview">
         <tr>
-          <td>住所</td>
-          <td>〒227-0043</td>
+          <td class = "overview-background">住所</td>
+          <td class = "overview-background">〒227-0043</td>
         </tr>
         <tr>
-          <td></td>
-          <td>神奈川県横浜市青葉区藤が丘2-3-2 シュベルティーF 1F</td>
+          <td class = "overview-background"></td>
+          <td class = "overview-background">神奈川県横浜市青葉区藤が丘2-3-2 シュベルティーF 1F</td>
         </tr>
         <tr>
-          <td>電話番号</td>
-          <td>045-972-4131</td>
+          <td class = "overview-background">電話番号</td>
+          <td class = "overview-background">045-972-4131</td>
         </tr>
         <tr>
-          <td>診療動物</td>
-          <td>犬・猫・フェレット</td>
+          <td class = "overview-background">診療動物</td>
+          <td class = "overview-background">犬・猫・フェレット</td>
         </tr>
       </table>
     </div>
@@ -130,25 +130,25 @@
         </tr>
         <tr class = "schedule2g">
           <td class = "time1">09:00〜12:00</td>
-          <td>ー</td>
-          <td>〇</td>
-          <td>〇</td>
-          <td>〇</td>
-          <td>〇</td>
-          <td>〇</td>
-          <td>〇</td>
-          <td>〇</td>
+          <td class = "yasumi">ー</td>
+          <td><span class="nikukyu"></span></td>
+          <td><span class="nikukyu"></span></td>
+          <td><span class="nikukyu"></span></td>
+          <td><span class="nikukyu"></span></td>
+          <td><span class="nikukyu"></span></td>
+          <td><span class="nikukyu"></span></td>
+          <td><span class="nikukyu"></span></td>
         </tr>
         <tr>
           <td class = "time2">16:00〜19:00</td>
-          <td>ー</td>
-          <td>〇</td>
-          <td>〇</td>
-          <td>〇</td>
-          <td>〇</td>
-          <td>〇</td>
-          <td>ー</td>
-          <td>ー</td>
+          <td class = "yasumi">ー</td>
+          <td><span class="nikukyu"></span></td>
+          <td><span class="nikukyu"></span></td>
+          <td><span class="nikukyu"></span></td>
+          <td><span class="nikukyu"></span></td>
+          <td><span class="nikukyu"></span></td>
+          <td class = "yasumi">ー</td>
+          <td class = "yasumi">ー</td>
         </tr>
         </tr>
         <caption>※月曜日は休診日です
@@ -179,25 +179,25 @@
          </tr>
          <tr class = "schedule2g">
            <td class = "time1">09:00〜12:00</td>
-           <td>ー</td>
-           <td>〇</td>
-           <td>〇</td>
-           <td>〇</td>
-           <td>〇</td>
-           <td>〇</td>
-           <td>〇</td>
-           <td>〇</td>
+           <td class = "yasumi">ー</td>
+           <td><span class="nikukyu"></span></td>
+           <td><span class="nikukyu"></span></td>
+           <td><span class="nikukyu"></span></td>
+           <td><span class="nikukyu"></span></td>
+           <td><span class="nikukyu"></span></td>
+           <td><span class="nikukyu"></span></td>
+           <td><span class="nikukyu"></span></td>
          </tr>
          <tr>
            <td class = "time2">16:00〜19:00</td>
-           <td>ー</td>
-           <td>〇</td>
-           <td>〇</td>
-           <td>〇</td>
-           <td>〇</td>
-           <td>〇</td>
-           <td>ー</td>
-           <td>ー</td>
+           <td class = "yasumi">ー</td>
+           <td><span class="nikukyu"></span></td>
+           <td><span class="nikukyu"></span></td>
+           <td><span class="nikukyu"></span></td>
+           <td><span class="nikukyu"></span></td>
+           <td><span class="nikukyu"></span></td>
+           <td class = "yasumi">ー</td>
+           <td class = "yasumi">ー</td>
          </tr>
          </tr>
          <caption>※月曜日は休診日です
@@ -251,6 +251,7 @@ header {
     font-weight: bold;
     font-family: 'Arial', sans-serif; 
     text-decoration: none; 
+    color: #9A7154;
 }
 
 .gnavi{
@@ -264,7 +265,7 @@ header {
     display: block;
     padding:10px 20px 0;
     text-decoration: none;
-    color: #333;
+    color: #95613B;
 }
 
 .gnavi li{
@@ -277,7 +278,7 @@ header {
 }
 
 .gnavi li a:hover{
-  color:#0481A2;
+  color:#FABB41;
 }
 
 .gnavi li a::after {
@@ -288,7 +289,7 @@ header {
     left: 10%;
     width: 80%;
     height: 2px;
-    background:#0481A2;
+    background:#FABB41;
     /*アニメーションの指定*/
     transition: all .3s;
     transform: scale(0, 1);
@@ -326,7 +327,7 @@ main {
 }
 
 .slide-items .zoom {
-  transform: scala(1.05);
+  transform: scale(1.05);
 }
 
 .about-content, .concept-content {
@@ -358,7 +359,7 @@ main {
 }
 
 .concept-content {
-  display: frex;
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
@@ -447,6 +448,7 @@ main {
 
 .overview {
   border: 0px none;
+  background-color: #ffffff;
 }
 
 .schedule { /*診療スケジュール*/
@@ -460,6 +462,10 @@ main {
   margin-bottom: 20px;
 }
 
+.overview-background {
+  background-color: #ffffff;
+}
+
 table {
   border-collapse: collapse;
 }
@@ -468,17 +474,26 @@ th {
   height: 50px;
   padding: 5px 15px;
   background: #9A7154;
-  color: #FFF;
+  color: #ffffff;
 }
 
 td {
   height: 50px;
   padding: 5px 15px;
-  background-color: #ffffff;
+  background-color: #FFFBF0;
+}
+
+.yasumi {
+  color: #FABB41;
+}
+
+.nikukyu {
+  height: 20px;
+  content : url("/images/nikukyu.png") ;/* 画像コンテンツの指定 */
 }
 
 .schedule2g{ /*診療スケジュール表の2行目の下線*/
-  border-bottom: solid 1px #9e9e9e;
+  border-bottom: solid 1px #ABABAB;
 }
 
 .time1, .time2  { /*診療スケジュール表の時間部分*/
@@ -490,7 +505,7 @@ td {
 }
 
 .bottom-menu-list {/*フッター上の診療スケジュール表*/
-  border: solid 1px #9e9e9e;
+  border: solid 1px #ABABAB;
 }
 
 .pay{ /*支払い方法*/
@@ -499,10 +514,10 @@ td {
   align-items: center;
 }
 .payment {/*支払い方法*/
-  padding-top: 4px;
+  padding-top: 40px;
   font-size: 25px;
-  width: 720px;
-  height: 140px;
+  width: 650px;
+  height: 125px;
   border-radius: 10px;
   border: 1px solid;
   border-color: #FABB41;
@@ -591,7 +606,7 @@ html {
 .footer-hr {
   width: 60%;
 	border-style: 1px solid;
-	border-color:darkgrey;
+	border-color:#FFEAA9;
   margin-left: 20%;
 }
 
@@ -602,12 +617,36 @@ html {
   justify-content: center; /*中央に配置*/
   align-items: center;
 }
+.f-nav-list li a:hover {
+  color: #555;
+}
+.f-nav-list li a::after {
+    content: '';
+    /*絶対配置で線の位置を決める*/
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 80%;
+    height: 2px;
+    background:#555;
+    /*アニメーションの指定*/
+    transition: all .3s;
+    transform: scale(0, 1);
+    transform-origin: left top;
+}
+
+/*現在地とhoverの設定*/
+.f-nav-list li a:hover::after {
+    transform: scale(1, 1);
+}
+
 
 .nav-list-item {
   background-color: #FAB27B;
   width: 130px;
   height: 30px;
 }
+
 
   </style>
 </body>
